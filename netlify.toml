@@ -1,21 +1,18 @@
+
 [build]
-  publish = "dist"
-  command = "npm run Build"
+  publish = "Build" # ou o diretório onde estão seus arquivos estáticos
 
 [[headers]]
-  for = "*.js"
+  for = "/*"
   [headers.values]
-    Content-Type = "application/javascript"
     Content-Encoding = "gzip"
+    Cache-Control = "max-age=31536000" # cache prolongado
 
 [[headers]]
-  for = "*.css"
+  for = "/service-worker.js"
   [headers.values]
-    Content-Type = "text/css"
-    Content-Encoding = "gzip"
+    Cache-Control = "no-cache"
 
-[[headers]]
-  for = "*.html"
-  [headers.values]
-    Content-Type = "text/html"
-    Content-Encoding = "gzip"
+[build.processing]
+  css = false
+  js = false
