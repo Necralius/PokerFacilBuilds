@@ -1,16 +1,23 @@
 [build]
-  publish = "build" # ou o diretório onde estão seus arquivos estáticos
+  publish = "dist"
+  command = "npm run build"
 
 [[headers]]
-  for = "/*"
+  for = "*.html"
   [headers.values]
     Content-Encoding = "gzip"
-    Cache-Control = "max-age=31536000" # cache prolongado
 
 [[headers]]
-  for = "/service-worker.js"
+  for = "*.css"
   [headers.values]
-    Cache-Control = "no-cache"
-[build.processing]
-  css = false
-  js = false
+    Content-Encoding = "gzip"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Content-Encoding = "gzip"
+
+[[headers]]
+  for = "*.json"
+  [headers.values]
+    Content-Encoding = "gzip"
