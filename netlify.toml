@@ -9,9 +9,3 @@
   [headers.values]
     Content-Type = "application/javascript"
     Content-Encoding = "br"
-
-[[headers]]
-  for = "/Build/*.wasm"
-  [headers.values]
-    Content-Type = "application/wasm"
-    Content-Encoding = "gzip"

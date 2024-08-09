@@ -1,9 +1,9 @@
-const cacheName = "NekraByte-PPPokerPlay-7.0";
+const cacheName = "NekraByte-PokerFacil-7.0";
 const contentToCache = [
-    "Build/PokerFacil (PWA) 7.0 - Gzip.loader.js",
-    "Build/PokerFacil (PWA) 7.0 - Gzip.framework.js.gz",
-    "Build/PokerFacil (PWA) 7.0 - Gzip.data.gz",
-    "Build/PokerFacil (PWA) 7.0 - Gzip.wasm.gz",
+    "Build/PokerFacil (PWA) 7.0 - Gzip 3.loader.js",
+    "Build/PokerFacil (PWA) 7.0 - Gzip 3.framework.js.gz",
+    "Build/PokerFacil (PWA) 7.0 - Gzip 3.data.gz",
+    "Build/PokerFacil (PWA) 7.0 - Gzip 3.wasm.gz",
     "TemplateData/style.css"
 
 ];
