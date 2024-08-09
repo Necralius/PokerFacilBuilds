@@ -1,9 +1,9 @@
 const cacheName = "NekraByte-PPPokerPlay-7.0";
 const contentToCache = [
-    "Build/Web PokerFacil - 7.1 - PWA.loader.js",
-    "Build/Web PokerFacil - 7.1 - PWA.framework.js.gz",
-    "Build/Web PokerFacil - 7.1 - PWA.data.gz",
-    "Build/Web PokerFacil - 7.1 - PWA.wasm.gz",
+    "Build/PokerFacil (PWA) 7.0 - Uncompressed.loader.js",
+    "Build/PokerFacil (PWA) 7.0 - Uncompressed.framework.js",
+    "Build/PokerFacil (PWA) 7.0 - Uncompressed.data",
+    "Build/PokerFacil (PWA) 7.0 - Uncompressed.wasm",
     "TemplateData/style.css"
 
 ];
