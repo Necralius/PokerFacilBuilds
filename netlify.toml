@@ -1,4 +1,20 @@
+[build]
+  command = "npm run Build"
+  publish = "Build"
+
 [[headers]]
-  for = "/*"
+  for = "/*.gz"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Content-Encoding = "gzip"
+
+[[headers]]
+  for = "/*.br"
+  [headers.values]
+    Content-Type = "application/javascript"
+    Content-Encoding = "br"
+
+[[headers]]
+  for = "/Build/*"
   [headers.values]
     Content-Encoding = "gzip"
