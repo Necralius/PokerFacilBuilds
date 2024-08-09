@@ -1,19 +1,21 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
 [[headers]]
-  for = "*.html"
+  for = "*.js"
   [headers.values]
+    Content-Type = "application/javascript"
     Content-Encoding = "gzip"
 
 [[headers]]
   for = "*.css"
   [headers.values]
+    Content-Type = "text/css"
     Content-Encoding = "gzip"
 
 [[headers]]
-  for = "*.js"
+  for = "*.html"
   [headers.values]
-    Content-Encoding = "gzip"
-
-[[headers]]
-  for = "*.json"
-  [headers.values]
+    Content-Type = "text/html"
     Content-Encoding = "gzip"
